@@ -1,0 +1,448 @@
+*{margin:0; padding:0;}
+
+.fileUpload {
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+    margin-left: 56px;
+    margin-top: 24px;
+    width: 300px;
+    height: 50px;
+    padding: 12px;
+    font-family: med_hel;
+    font-size: 18px;
+}
+.fileUpload input.upload {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+
+.resetbutton {
+    border: 1px grey solid;
+    width: 200px;
+    height: 60px;
+    border-radius: 5px;
+    padding: 20px;
+    margin: auto;
+    padding-left: 49px;
+    font-size: 16px;
+    padding-top: 18px;
+    margin-top: 20px;
+    margin-left: 20px;
+    transition: all 0.4s ease;
+    background-color: #64B38B;
+    color: white;
+    font-family: med_hel;
+    font-size: 18px;
+    border: 1px white solid;
+    cursor: pointer;
+}
+
+.resetbutton:hover {
+    background-color: #1e7d4d;
+}
+
+.postbutton {
+    border: 1px grey solid;
+    width: 200px;
+    height: 60px;
+    border-radius: 5px;
+    padding: 20px;
+    margin: auto;
+    padding-left: 36px;
+    font-size: 16px;
+    padding-top: 18px;
+    margin-top: 20px;
+    margin-right: 20px;
+    transition: all 0.4s ease;
+    background-color: #3C9BEC;
+    color: white;
+    font-family: med_hel;
+    font-size: 18px;
+    border: 1px white solid;
+    cursor: pointer;
+}
+
+.postbutton:hover {
+    background: #0e89f3;
+}
+
+
+
+
+.note {
+    margin-top: 18px;
+    margin-bottom: 30px;
+    color: grey;
+    font-family: light_hel;
+    width: 280px;
+}
+
+.allskills {
+    margin-top: 30px;
+}
+
+.detailexperiences input[type="text"], .detailmotivations input[type="text"], .detailcertificates input[type="text"] {
+    width: 685px;
+    height: 100px;
+    border-radius: 3px;
+    padding-left: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.05);
+}
+
+.example {
+    font-family: light_hel;
+    color: grey;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.row.studentexperiences, .row.studentmotivations, .row.studentskills, .row.studentcertificates{
+    margin-top: 50px;
+    margin-left: 5px;
+}
+
+.cvsubheader {
+    font-family: med_hel;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+
+.studentname, .studentemail, .studentphone, .studentaddress {
+    margin-left: 15px;
+    margin-top: 20px;
+    font-family: med_hel;
+    font-size: 16px;
+    color: #555d6a;
+}
+
+.studentname input[type="text"], .studentaddress input[type="text"], .studentemail input[type="text"], .studentphone input[type="text"] {
+    width: 300px;
+    height: 40px;
+    border-radius: 3px;
+    padding-left: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.05);
+}
+
+.cvheader {
+    margin-top: 30px;
+    margin-left: 15px;
+    font-size: 30px;
+    font-family: med_hel;
+    font-weight: 600;
+    color: #231f20;
+}
+
+.subfooter {
+    width: 100%;
+    height: 899px;
+    background-image: url(/images/bottompic.png);
+}
+
+i.fa.fa-check-circle-o {
+    color: #02cc02;
+    font-size: 20px;
+}
+
+.subuserskills .row {
+    margin-bottom: 10px;
+}
+
+.subuserskills .col-md-9 {
+    padding-left: 30px;
+    font-size: 16px;
+}
+
+button.btn.btn-primary {
+    width: 210px;
+    height: 40px;
+    font-size: 17px;
+    margin-right: 15px;
+    margin-bottom: 25px;
+    box-shadow: 1px 1px 5px rgba(128, 128, 128, 0.3);
+    font-weight: 600;
+    background-color: #75B9F8;
+    transition: all 0.4s ease;
+    border: 1px solid #75B9F8;
+}
+
+button.btn.btn-primary:hover {
+    background-color: #3fa0fb;
+}
+
+.userskills {padding-bottom: 80px;border-bottom: 1px rgba(128, 128, 128, 0.3) solid;margin-bottom: 20px;}
+
+.usermotivations {padding-bottom: 80px;border-bottom: 1px rgba(128, 128, 128, 0.3) solid;margin-bottom: 20px;}
+
+.userexperiences {padding-bottom: 80px;border-bottom: 1px rgba(128, 128, 128, 0.3) solid;margin-bottom: 20px;}
+
+.userskills span {
+    font-size: 20px;
+    font-family: med_hel;
+    font-weight: 600;
+}
+
+.subtittle {
+    font-size: 18px;
+    font-family: med_hel;
+    margin-top:20px;
+    margin-bottom: 10px;
+}
+
+.usermotivations span {
+    font-size: 20px;
+    font-family: med_hel;
+    font-weight: 600;
+}
+
+.userexperiences span {
+    font-size: 20px;
+    font-family: med_hel;
+    font-weight: 600;
+}
+
+.userstatus {
+    margin-bottom: 20px;
+    border-bottom: 1px rgba(128, 128, 128, 0.3) solid;
+    padding-bottom: 48px;
+}
+
+.userstatus span {
+    color: #4adf51;
+}
+
+.usernumber {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.username {
+    margin-top: 47px;
+    font-family: med_hel;
+    font-size: 22px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.userpicture {
+    margin-top: 15px;
+}
+
+.col-md-4.subcv {
+    background-color: #FAFAFA;
+    border-radius: 3px;
+    margin-top: 50px;
+    height: 390px;
+    margin-left: 30px;
+    width: 260px;
+    border: 1px rgba(128, 128, 128, 0.3) solid;
+}
+
+.col-md-8.maincv {
+    background-color: #FAFAFA;
+    border-radius: 3px;
+    margin-top: 50px;
+    height: 1750px;
+    border: 1px rgba(128, 128, 128, 0.3) solid;
+}
+
+.container-fluid.banner {
+    background-image: url(images/banner_1.png);
+    height: 415px;
+}
+
+.main {
+    height: 1050px;
+}
+
+.userinfo i {
+    color: rgba(128, 128, 128, 0.7);
+    padding-right: 21px;
+}
+
+.userinfo {
+    font-size: 16px;
+}
+
+.uploadpicture a {
+    color: #24c1fc;
+    font-size: 15px;
+    margin: auto;
+    margin-left: 20px;
+}
+
+.uploadpicture {
+    margin-bottom: 10px;
+    border-bottom: 1px rgba(128, 128, 128, 0.3) solid;
+    padding-bottom: 10px;
+    margin-left: 15px;
+    margin-top: 30px;
+    border: 1px rgba(128, 128, 128, 0.5) dashed;
+    width: 715px;
+    padding: 25px;
+}
+
+.userpicture img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.bottomtitle {
+    border-bottom: 1px white solid;
+    width: 100%;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.footer {
+    padding: 1rem;
+    background-color: #3F6177;
+    text-align: center;
+    color: white;
+    height: 250px;
+}
+
+.col-md-2.page {
+    margin-top: 42px;
+}
+.p3 {
+    font-size: 29px;
+}
+
+.p3 {
+    font-family: light_hel;
+}
+
+.p2 {
+    font-size: 22px;
+    font-family: med_hel;
+}
+
+.p1 {font-size: 26px;font-family: med_hel;}
+
+.bottombrand {
+    font-size: 20px;
+    margin-top: 33px;
+    text-shadow: 1px 1px 2px #423f3f;
+}
+
+.backtologin {
+    margin-top: 15px;
+}
+
+.backtologin a {
+    color: #27a6f0;
+    text-decoration: none;
+    margin-left: 5px;
+}
+
+.signupbutton {
+    text-align: right;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.box input[type="text"] {width: 279px;height: 35px;border-radius: 2px;border: 2px rgba(128, 128, 128, 0.27) solid;padding-left: 10px;}
+
+.box input[type="password"] {width: 279px;height: 35px;border-radius: 2px;border: 2px rgba(128, 128, 128, 0.27) solid;padding-left: 10px;}
+
+.box span {
+    color: #807e7e;
+}
+
+.lower {
+    margin-bottom: 10px;
+}
+
+.upper {
+    margin-bottom: 5px;
+}
+
+.box {
+    width: 630px;
+    margin: auto;
+    background-color: #E9EBEC;
+    box-shadow: 1px 1px 5px rgba(128, 128, 128, 0.19);
+    padding: 20px;
+    font-family: med_hel;
+    font-size: 16px;
+    color: black;
+}
+
+.col-md-12.text-center.fucntion {
+    font-size: 20px;
+    font-family: regular_hel;
+    margin-bottom: 20px;
+}
+
+img.responsive.logoltu {
+    margin-bottom: 10px;
+}
+
+.subbanner {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.direct {
+    float: left;
+    margin-left: 70px;
+    margin-top: 33px;
+    font-size: 15px;
+    color: white;
+}
+
+.direct a {
+    color: white;
+    transition: 0.4s all ease;
+}
+
+.direct a:hover {
+    text-decoration: none;
+    color: #9cfcfd;
+    font-size: 20px;
+}
+
+.direct a:hover {}
+
+.brand {
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 21px;
+}
+
+img.logo {
+    float: left;
+    margin-top: 5px;
+}
+
+.topbanner {
+    width: 100%;
+    height: 90px;
+    background-color: #2A3842;
+}
+
+@font-face {
+    font-family: regular_hel;
+    src: url(/fonts/helveticaneue.ttf);
+}
+@font-face {
+    font-family: light_hel;
+    src: url(/fonts/helveticaneuelight.ttf);
+}
+@font-face {
+    font-family: med_hel;
+    src: url(/fonts/helveticaneuemedium.ttf);
+}

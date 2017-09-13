@@ -1,0 +1,108 @@
+* {
+}
+
+.logo img.img-responsive {
+    margin: auto;
+}
+
+.addbtn {
+    margin-left: 20px;
+    width: 200px;
+    margin-top: 20px;
+}
+
+button.btn.btn-primary.des {
+    width: 200px;
+    background-color: white;
+
+}
+
+button.btn.btn-danger.des {
+    width: 200px;
+    background-color: white;
+
+}
+
+.deletebtn {
+    margin-left: 20px;
+    padding-bottom: 20px;
+    width: 200px;
+}
+
+.rank {
+    color: #57b952;
+}
+
+.average {
+    color: red;
+}
+
+.searchbtn {
+    margin-top: 11px;
+    cursor: pointer;
+    transform: translate(20px, 0px);
+    width: 10%;
+    float: left;
+}
+
+.myinput {
+
+    background-repeat: no-repeat; /* Do not repeat the icon image */
+    width: 50%; /* Full-width */
+    font-size: 16px; /* Increase font-size */
+    padding: 12px 20px 12px 40px; /* Add some padding */
+    border: 1px solid #ddd; /* Add a grey border */
+    margin-bottom: 12px; /* Add some space below the input */
+    float: left;
+}
+
+.postname a {
+    text-decoration: underline;
+    font-style: italic;
+    color: #7843ba;
+}
+
+.acttime {
+    color: #b9b9b9;
+    float: left;
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+.recentlyacts a {
+    color: #4b74cb;
+    transition: all 0.4s ease;
+}
+
+.recentlyacts a:hover {
+    color: #1dc7ea;
+}
+
+.recentlyacts li {
+    margin-bottom: 20px;
+    color: #799bd6;
+}
+
+.news a {
+    color: #4b74cb;
+    transition: all 0.4s ease;
+}
+
+.news a:hover {
+    color: #1dc7ea;
+}
+
+.news li {
+    margin-bottom: 20px;
+    color: #799bd6;
+}
+
+.adminava {
+    margin-top: 4px;
+}
+
+li.helloadmin {
+    margin-right: 20px;
+    margin-top: 20px;
+    color: grey;
+}

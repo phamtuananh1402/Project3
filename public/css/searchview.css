@@ -1,0 +1,529 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.searchingcontent span {
+    color: #5350bf;
+}
+
+.searched input[type="text"] {
+    border-radius: 5px;
+    border: 1px #b3b3b3 solid;
+    padding: 4px;
+    padding-left: 10px;
+}
+
+.searched i.fa.fa-search {
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.selection {
+    border-bottom: 1px #d8d8d8 solid;
+    width: 300px;
+    margin: auto;
+    padding-bottom: 20px;
+    margin-bottom: 15px;
+}
+
+select.selectdesign {
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 5px;
+}
+
+.dess, .dess2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.searchingcontent {
+    text-align: center;
+    font-family: light_hel;
+    width: 500px;
+    margin: auto;
+    margin-top: 30px;
+    background-color: whitesmoke;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 1px #d0d0d0;
+}
+
+.drp {
+    background-color: #2c3842;
+    color: white;
+    margin-top: -2px;
+}
+
+.banbtn {
+    width: 150px;
+    margin: auto;
+    padding: 5px;
+    border: 1px white solid;
+    border-radius: 5px;
+    transition: all 0.4s ease;
+    transform: scale(1);
+    cursor: pointer;
+}
+
+.banbtn:hover {
+    background: white;
+    color: black;
+    transform: scale(1.2);
+}
+
+.banheader2 {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.banheader {
+    font-size: 40px;
+    margin-bottom: inherit;
+    margin-top: -10px;
+}
+
+.bancon {
+    margin: auto;
+    text-align: center;
+    color: white;
+    font-family: light_hel;
+}
+
+.footban {
+    background-image: url(/images/footban.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+    height: 500px;
+    margin-top: 200px;
+}
+
+.bann {
+    margin-top: 200px;
+    position: relative;
+}
+
+.bann img.img-responsive {
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+.listskill {
+    margin-bottom: 50px;
+}
+
+.listskill li {
+    float: left;
+    border: 1px rgba(128, 128, 128, 0.22) solid;
+    padding: 5px;
+    margin-right: 20px;
+    border-radius: 5px;
+    font-family: light_hel;
+    color: white;
+    background-color: #6ecfff;
+    font-size: 12px;
+}
+
+.listskill ul {
+    list-style-type: none;
+}
+
+.skilltitle {
+    font-family: med_hel;
+    margin-bottom: 10px;
+    color: grey;
+}
+
+.skillrequire {
+    width: 300px;
+    border: 1px #dadada solid;
+    margin-top: 50px;
+    padding: 20px;
+}
+
+.topicdate, .recruit {
+    color: white;
+    background-color: #51517c;
+    width: 150px;
+    padding: 5px;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    float: left;
+    margin-right: 50px;
+    font-family: med_hel;
+}
+
+.recruit {
+    background-color: #65657a;
+}
+
+.topicdes {
+    font-family: light_hel;
+    width: 600px;
+    margin-left: 30px;
+    margin-bottom: 50px;
+    line-height: 45px;
+}
+
+.topiccontent {
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+.topictitle {
+    font-family: varela;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.studentlogin img.img-responsive {
+    width: 97%;
+    margin-left: 20px;
+    margin-top: 30px;
+    transition: all 0.4s ease;
+    opacity: 0.8;
+    transform: scale(1);
+}
+
+.studentlogin img.img-responsive:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.headerdes {
+    margin-left: 20px;
+    font-family: varela;
+    margin-top: 20px;
+    font-size: 16px;
+    color: #44b2ff;
+    background-color: #f5f5f5;
+    padding: 20px;
+}
+
+.searchheader {
+    font-family: varela;
+    font-size: 30px;
+    color: #1F2836;
+    box-shadow: 1px 1px 1px gainsboro;
+    padding-left: 20px;
+}
+
+.topicnote {
+    font-size: 11px;
+    color: rgba(128, 128, 128, 0.5);
+}
+
+.copyright {
+    text-align: center;
+    color: #717171;
+    background-color: #212f3c;
+    height: 50px;
+    padding-top: 15px;
+    font-family: varela;
+    font-size: 12px;
+}
+
+.col-md-4.about {
+    border-left: 1px rgba(255, 255, 255, 0.3) dashed;
+    border-right: 1px rgba(255, 255, 255, 0.3) dashed;
+}
+
+.link a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    opacity: 0.8;
+    transition: all 0.4s ease;
+}
+
+.link a:hover {
+    opacity: 1;
+}
+
+.bottomlink {
+    margin-top: 10px;
+}
+
+.bottomtitle {
+    font-family: med_hel;
+    font-size: 20px;
+    margin-bottom: 0px;
+    border-bottom: 1px rgba(255, 255, 255, 0.3) solid;
+    width: 199px;
+    text-align: center;
+    margin: auto;
+    padding-bottom: 5px;
+}
+
+.col-md-4.about, .col-md-4.contact {
+    margin-top: 35px;
+}
+
+.selections a {
+    color: #3f6e90;
+    margin-left: 10px;
+    opacity: 0.8;
+    transition: all 0.4s ease;
+    text-decoration: none;
+}
+
+.selections a:hover {
+    opacity: 1;
+}
+
+.selections li {
+    margin-bottom: 10px;
+    font-family: varela;
+    color: grey;
+}
+
+.selections ul {
+    list-style-type: none;
+}
+
+.selections {
+    border-top: 1px rgba(128, 128, 128, 0.2) solid;
+    padding-top: 15px;
+}
+
+.managementteacherpicture img.img-responsive {
+    margin-bottom: 20px;
+}
+
+.main {
+    margin-top: 50px;
+}
+
+.col-md-2.page {
+    margin-top: 42px;
+}
+
+.p3 {
+    font-size: 29px;
+}
+
+.p3 {
+    font-family: light_hel;
+}
+
+.p2 {
+    font-size: 19px;
+    font-family: helve;
+    color: #fbfbfb;
+}
+
+.p1 {
+    font-size: 21px;
+    font-family: med_hel;
+}
+
+.bottombrand {
+    font-size: 20px;
+    margin-top: 70px;
+    text-shadow: 1px 1px 2px #423f3f;
+}
+
+.footer {
+    padding: 1rem;
+    text-align: center;
+    color: white;
+    height: 250px;
+    background: -webkit-linear-gradient(#3d5c75, #2C3842);
+}
+
+.subfooter {
+    width: 100%;
+    height: 899px;
+    background-image: url(/images/bottompic.png);
+}
+
+.registerbtn {
+    width: 200px;
+    margin: auto;
+    background-color: #2C3842;
+    color: white;
+    height: 40px;
+    border-radius: 5px;
+    padding: 9px;
+    font-family: varela;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    border: 2px white solid;
+}
+
+.loginbtn {
+    width: 200px;
+    margin: auto;
+    background-color: rgba(226, 226, 226, 0.29);
+    color: white;
+    height: 40px;
+    border-radius: 5px;
+    padding: 9px;
+    font-family: varela;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.loginbtn:hover {
+    background-color: #2C3842;
+    width: 500px;
+}
+
+.registerbtn:hover {
+    border: 2px #2C3842 solid;
+    color: #2C3842;
+    background-color: #F3F3F3;
+}
+
+.inside h2 {
+    font-size: 15px;
+    color: #888888;
+    margin-top: 0px;
+    line-height: 25px;
+    margin-bottom: 25px;
+}
+
+.inside h1 {
+    font-size: 40px;
+    font-family: varela;
+    color: black;
+}
+
+.container.inside {
+    padding-top: 90px;
+    text-align: center;
+}
+
+.wide3 {
+    width: 100%;
+    height: 160px;
+    background-size: cover;
+    background-color: #2c3842;
+}
+
+.wide2 {
+    width: 100%;
+    height: 420px;
+    background-image: url(/images/subbanner.png);
+    background-size: cover;
+}
+
+.wide {
+    width: 100%;
+    height: 613px;
+    background-image: url(/images/banner.png);
+    background-size: cover;
+}
+
+.wide img {
+    width: 55%;
+    margin-top: 9px;
+}
+
+.search input[type="text"] {
+    width: 150px;
+    border-radius: 20px;
+    font-size: 14px;
+    height: 28px;
+    color: grey;
+    padding-left: 15px;
+    border: 1px rgba(128, 128, 128, 0.2) solid;
+    background: #F2F2F2;
+}
+
+.signinbtn {
+    font-size: 14px;
+    background-color: #2C3842;
+    color: white;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 3px;
+    margin-top: -2px;
+    transition: all 0.4s ease;
+    border: 1px transparent solid;
+}
+
+.signinbtn:hover {
+    border: 1px black solid;
+    background-color: white;
+    color: black;
+}
+
+.top ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul.dropdown-menu.dropped {
+    width: 341px;
+}
+
+.top li {
+    float: left;
+    transition: all 0.4s ease;
+}
+
+.dropped li {
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.dropped li:hover {
+}
+
+.top li a, .search {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 20px 16px;
+    text-decoration: none;
+    font-family: varela;
+    font-size: 18px;
+    color: #333333;
+    transition: all 0.4s ease;
+}
+
+.top li:hover {
+    background-color: #2C3842;
+    border-radius: 10px;
+    color: white;
+}
+
+.top li a:hover {
+    color: white;
+
+}
+
+@font-face {
+    font-family: helve;
+    src: url(/fonts/helveticaneue.ttf);
+}
+
+@font-face {
+    font-family: med_hel;
+    src: url(/fonts/helveticaneuemedium.ttf);
+}
+
+@font-face {
+    font-family: light_hel;
+    src: url(/fonts/helveticaneuelight.ttf);
+}
+
+@font-face {
+    font-family: bold_hel;
+    src: url(/fonts/helveticaneuebold.ttf);
+}
+
+@font-face {
+    font-family: varela;
+    src: url(/fonts/VarelaRound.otf);
+}

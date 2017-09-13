@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.bottomtitle {
+    border-bottom: 1px white solid;
+    width: 100%;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.footer {
+
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    background-color: #3F6177;
+    text-align: center;
+    color: white;
+    height: 200px;
+}
+
+.col-md-2.page {
+    margin-top: 42px;
+}
+
+.p3 {
+    font-size: 29px;
+    font-family: light_hel;
+}
+
+.p2 {
+    font-size: 22px;
+    font-family: med_hel;
+}
+
+.p1 {
+    font-size: 26px;
+    font-family: med_hel;
+}
+
+.bottombrand {
+    font-size: 20px;
+    margin-top: 33px;
+    text-shadow: 1px 1px 2px #423f3f;
+}
+
+.backtologin {
+    margin-top: 15px;
+}
+
+.backtologin a {
+    color: #27a6f0;
+    text-decoration: none;
+    margin-left: 5px;
+}
+
+.signupbutton {
+    text-align: right;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.box input[type="text"] {
+    width: 279px;
+    height: 35px;
+    border-radius: 2px;
+    border: 2px rgba(128, 128, 128, 0.27) solid;
+    padding-left: 10px;
+}
+
+.box input[type="password"] {
+    width: 279px;
+    height: 35px;
+    border-radius: 2px;
+    border: 2px rgba(128, 128, 128, 0.27) solid;
+    padding-left: 10px;
+}
+
+.box span {
+    color: #807e7e;
+}
+
+.lower {
+    margin-bottom: 10px;
+}
+
+.upper {
+    margin-bottom: 5px;
+}
+
+.box {
+    width: 630px;
+    margin: auto;
+    background-color: #E9EBEC;
+    box-shadow: 1px 1px 5px rgba(128, 128, 128, 0.19);
+    padding: 20px;
+    font-family: med_hel;
+    font-size: 16px;
+    color: black;
+}
+
+.col-md-12.text-center.fucntion {
+    font-size: 20px;
+    font-family: regular_hel;
+    margin-bottom: 20px;
+}
+
+img.responsive.logoltu {
+    margin-bottom: 10px;
+}
+
+.subbanner {
+    margin-top: 10px;
+    margin-bottom: 50px;
+    font-size: 16px;
+}
+
+.direct {
+    float: left;
+    margin-left: 70px;
+    margin-top: 33px;
+    font-size: 15px;
+    color: white;
+}
+
+.direct a {
+    color: white;
+    transition: 0.4s all ease;
+}
+
+.direct a:hover {
+    text-decoration: none;
+    color: #9cfcfd;
+    font-size: 20px;
+}
+
+.direct a:hover {
+}
+
+.brand {
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 21px;
+}
+
+img.logo {
+    float: left;
+    margin-top: 5px;
+}
+
+.topbanner {
+    width: 100%;
+    height: 90px;
+    background-color: #2A3842;
+}
+
+@font-face {
+    font-family: regular_hel;
+    src: url(/public/fonts/helveticaneue.ttf);
+}
+
+@font-face {
+    font-family: light_hel;
+    src: url(/public/fonts/helveticaneuelight.ttf);
+}
+
+@font-face {
+    font-family: med_hel;
+    src: url(/public/fonts/helveticaneuemedium.ttf);
+}
+
