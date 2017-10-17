@@ -75,7 +75,6 @@ class StudentsController extends Controller
     public function show(Students $students)
     {
 
-
     }
 
     /**
@@ -87,7 +86,6 @@ class StudentsController extends Controller
     public function edit($id)
     {
         //
-
     }
 
     public function update(Request $request, Students $student)
