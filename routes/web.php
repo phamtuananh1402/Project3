@@ -22,11 +22,6 @@ Route::get('/home', function () {
     return view('homepage');
 });
 
-Route::get('/chart',function(){
-
-    return view('chart');
-});
-
 Route::get('aboutus', function () {
 
     return view('aboutus');
