@@ -45,9 +45,13 @@ return [
 
         'local' => [
             'driver' => 'local',
-            'root' => storage_path('app/public'),
-            'url' => env('APP_URL') . '/storage',
-            'visibility' => 'public',
+            'root' => storage_path('app'),
+
+        ],
+
+        'uploads' => [ // we will use this storage name
+            'driver' => 'local',
+            'root' => public_path() . '/images/', // public_path() is you public folder.
         ],
 
         'public' => [

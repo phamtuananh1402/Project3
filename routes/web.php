@@ -106,8 +106,8 @@ Route::group(['middleware' => ['auth', 'student']], function () {
     //Student Profile
     Route::get('student/profile/', 'StudentsController@index');
     Route::get('student/create/profile', 'StudentsController@create');
-    Route::post('student/profile/', 'StudentsController@update');
-
+    Route::post('student/profile/update', 'StudentsController@store');
+    Route::post('/dropzone', 'StudentsController@upload');
     //Student CV
     Route::get('student/cv', 'StudentCvController@create');
     Route::post('student/cv', 'StudentCvController@store');
