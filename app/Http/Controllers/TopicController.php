@@ -25,11 +25,11 @@ class TopicController extends Controller
     {
         $company_id = DB::table('representation_company')->join('topic', 'representation_company.representation_id', '=', 'topic.representation_id')
             ->where('topic.topic_id', '=', $topicId)->pluck('company_id');
-
-        return view('topic/detailtopic')->with('topic_id', Topic::where('topic_id', '=', $topicId)->get())
+        $other_topic = DB::table('topic')->where('representation_id','=',$company_id)->take(6)->get();
+        return view('topic.topic_detail',compact('other_topic'))->with('topic_id', Topic::where('topic_id', '=', $topicId)->first())
             ->with('company', DB::table('company')
                 ->join('representation_company', 'representation_company.company_id', '=', 'company.company_id')
-                ->where('representation_company.company_id', '=', $company_id)->get())
+                ->where('representation_company.company_id', '=', $company_id)->first())
             ->with('topic_skills', DB::table('topic')
                 ->join('topic_skills', 'topic.topic_id', '=', 'topic_skills.topic_id')
                 ->where('topic.topic_id', '=', $topicId)->get())

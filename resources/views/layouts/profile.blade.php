@@ -13,35 +13,35 @@
         <meta name="csrf-token" content="{{ csrf_token() }}">
         <!-- BEGIN GLOBAL MANDATORY STYLES -->
         <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all" rel="stylesheet" type="text/css" />
-        <link href="../assets/global/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
-        <link href="../assets/global/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css" />
-        <link href="../assets/global/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-        <link href="../assets/global/plugins/bootstrap-switch/css/bootstrap-switch.min.css" rel="stylesheet" type="text/css" />
+        <link href="/assets/global/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+        <link href="/assets/global/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css" />
+        <link href="/assets/global/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="/assets/global/plugins/bootstrap-switch/css/bootstrap-switch.min.css" rel="stylesheet" type="text/css" />
         <!-- END GLOBAL MANDATORY STYLES -->
         <!-- BEGIN PAGE LEVEL PLUGINS -->
         <link rel="stylesheet" href="https://rawgit.com/enyo/dropzone/master/dist/dropzone.css">
-        <link href="../assets/global/plugins/bootstrap-fileinput/bootstrap-fileinput.css" rel="stylesheet" type="text/css" />
+        <link href="/assets/global/plugins/bootstrap-fileinput/bootstrap-fileinput.css" rel="stylesheet" type="text/css" />
         <!-- END PAGE LEVEL PLUGINS -->
         <!-- BEGIN THEME GLOBAL STYLES -->
-        <link href="../assets/global/css/components-md.min.css" rel="stylesheet" id="style_components" type="text/css" />
-        <link href="../assets/global/css/plugins-md.min.css" rel="stylesheet" type="text/css" />
+        <link href="/assets/global/css/components-md.min.css" rel="stylesheet" id="style_components" type="text/css" />
+        <link href="/assets/global/css/plugins-md.min.css" rel="stylesheet" type="text/css" />
         <!-- END THEME GLOBAL STYLES -->
         <!-- BEGIN PAGE LEVEL STYLES -->
-        <link href="../assets/global/plugins/bootstrap-daterangepicker/daterangepicker.min.css" rel="stylesheet"
+        <link href="/assets/global/plugins/bootstrap-daterangepicker/daterangepicker.min.css" rel="stylesheet"
               type="text/css"
         />
-        <link href="../assets/global/plugins/bootstrap-datepicker/css/bootstrap-datepicker3.min.css" rel="stylesheet"
+        <link href="/assets/global/plugins/bootstrap-datepicker/css/bootstrap-datepicker3.min.css" rel="stylesheet"
               type="text/css"
         />
-        <link href="../assets/global/plugins/bootstrap-timepicker/css/bootstrap-timepicker.min.css" rel="stylesheet"
+        <link href="/assets/global/plugins/bootstrap-timepicker/css/bootstrap-timepicker.min.css" rel="stylesheet"
               type="text/css"
         />
-        <link href="../assets/pages/css/profile-2.min.css" rel="stylesheet" type="text/css" />
+        <link href="/assets/pages/css/profile-2.min.css" rel="stylesheet" type="text/css" />
         <!-- END PAGE LEVEL STYLES -->
         <!-- BEGIN THEME LAYOUT STYLES -->
-        <link href="../assets/layouts/layout4/css/layout.min.css" rel="stylesheet" type="text/css" />
-        <link href="../assets/layouts/layout4/css/themes/default.min.css" rel="stylesheet" type="text/css" id="style_color" />
-        <link href="../assets/layouts/layout4/css/custom.min.css" rel="stylesheet" type="text/css" />
+        <link href="/assets/layouts/layout4/css/layout.min.css" rel="stylesheet" type="text/css" />
+        <link href="/assets/layouts/layout4/css/themes/default.min.css" rel="stylesheet" type="text/css" id="style_color" />
+        <link href="/assets/layouts/layout4/css/custom.min.css" rel="stylesheet" type="text/css" />
         <!-- END THEME LAYOUT STYLES -->
         <link rel="shortcut icon" href="favicon.ico" /> </head>
     <!-- END HEAD -->
@@ -173,47 +173,46 @@
         <!-- END FOOTER -->
 
         <!-- BEGIN CORE PLUGINS -->
-        <script src="../assets/global/plugins/jquery.min.js" type="text/javascript"></script>
-        <script src="../assets/global/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
-        <script src="../assets/global/plugins/js.cookie.min.js" type="text/javascript"></script>
-        <script src="../assets/global/plugins/jquery-slimscroll/jquery.slimscroll.min.js" type="text/javascript"></script>
-        <script src="../assets/global/plugins/jquery.blockui.min.js" type="text/javascript"></script>
-        <script src="../assets/global/plugins/bootstrap-switch/js/bootstrap-switch.min.js" type="text/javascript"></script>
+        <script src="/assets/global/plugins/jquery.min.js" type="text/javascript"></script>
+        <script src="/assets/global/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="/assets/global/plugins/js.cookie.min.js" type="text/javascript"></script>
+        <script src="/assets/global/plugins/jquery-slimscroll/jquery.slimscroll.min.js" type="text/javascript"></script>
+        <script src="/assets/global/plugins/jquery.blockui.min.js" type="text/javascript"></script>
+        <script src="/assets/global/plugins/bootstrap-switch/js/bootstrap-switch.min.js" type="text/javascript"></script>
         <!-- END CORE PLUGINS -->
         <!-- BEGIN PAGE LEVEL PLUGINS -->
-        <script src="../assets/global/plugins/bootstrap-fileinput/bootstrap-fileinput.js" type="text/javascript"></script>
+        <script src="/assets/global/plugins/bootstrap-fileinput/bootstrap-fileinput.js" type="text/javascript"></script>
         <script src="http://maps.google.com/maps/api/js?sensor=false" type="text/javascript"></script>
-        <script src="../assets/global/plugins/gmaps/gmaps.min.js" type="text/javascript"></script>
-        <script src="../assets/global/plugins/jquery-validation/js/jquery.validate.min.js" type="text/javascript"></script>
-        <script src="../assets/global/plugins/jquery-validation/js/additional-methods.min.js" type="text/javascript"></script>
+        <script src="/assets/global/plugins/gmaps/gmaps.min.js" type="text/javascript"></script>
+        <script src="/assets/global/plugins/jquery-validation/js/jquery.validate.min.js" type="text/javascript"></script>
+        <script src="/assets/global/plugins/jquery-validation/js/additional-methods.min.js" type="text/javascript"></script>
         
         <!-- END PAGE LEVEL PLUGINS -->
         <!-- BEGIN THEME GLOBAL SCRIPTS -->
-        <script src="../assets/global/scripts/app.min.js" type="text/javascript"></script>
-        <script src="../assets/pages/scripts/form-validation-md.min.js" type="text/javascript"></script>
+        <script src="/assets/global/scripts/app.min.js" type="text/javascript"></script>
+        <script src="/assets/pages/scripts/form-validation-md.min.js" type="text/javascript"></script>
         <script src="https://rawgit.com/enyo/dropzone/master/dist/dropzone.js"></script>
         <!-- END THEME GLOBAL SCRIPTS -->
         <!-- BEGIN THEME LAYOUT SCRIPTS -->
-        <script src="../assets/layouts/layout4/scripts/layout.min.js" type="text/javascript"></script>
-        <script src="../assets/layouts/layout4/scripts/demo.min.js" type="text/javascript"></script>
-        <script src="../assets/layouts/global/scripts/quick-sidebar.min.js" type="text/javascript"></script>
-        <script src="../assets/layouts/global/scripts/quick-nav.min.js" type="text/javascript"></script>
+        <script src="/assets/layouts/layout4/scripts/layout.min.js" type="text/javascript"></script>
+        <script src="/assets/layouts/layout4/scripts/demo.min.js" type="text/javascript"></script>
+        <script src="/assets/layouts/global/scripts/quick-sidebar.min.js" type="text/javascript"></script>
+        <script src="/assets/layouts/global/scripts/quick-nav.min.js" type="text/javascript"></script>
 
-        <script src="../assets/global/plugins/moment.min.js" type="text/javascript"></script>
-        <script src="../assets/global/plugins/bootstrap-daterangepicker/daterangepicker.min.js"
+        <script src="/assets/global/plugins/moment.min.js" type="text/javascript"></script>
+        <script src="/assets/global/plugins/bootstrap-daterangepicker/daterangepicker.min.js"
                 type="text/javascript"></script>
-        <script src="../assets/global/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js"
+        <script src="/assets/global/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js"
                 type="text/javascript"></script>
-        <script src="../assets/global/plugins/bootstrap-timepicker/js/bootstrap-timepicker.min.js"
+        <script src="/assets/global/plugins/bootstrap-timepicker/js/bootstrap-timepicker.min.js"
                 type="text/javascript"></script>
-        <script src="../assets/global/plugins/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js"
+        <script src="/assets/global/plugins/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js"
                 type="text/javascript"></script>
-        <script src="../assets/global/plugins/clockface/js/clockface.js" type="text/javascript"></script>
-        <script src="../assets/pages/scripts/components-date-time-pickers.min.js" type="text/javascript"></script>
+        <script src="/assets/global/plugins/clockface/js/clockface.js" type="text/javascript"></script>
+        <script src="/assets/pages/scripts/components-date-time-pickers.min.js" type="text/javascript"></script>
         <!-- END THEME LAYOUT SCRIPTS -->
         <script>
-
-
+            Dropzone.autoDiscover = false;
             $(document).ready(function()
             {
                 $('#clickmewow').click(function()

@@ -39,6 +39,7 @@ Route::group(['middleware' => ['auth']], function () {
     Route::get('/topic/{topic_id}', 'TopicController@index');
     Route::get('/student/cv/{student_id}', 'StudentCvController@index');
     Route::get('/topic', 'ListTopicController@index');
+    Route::get('/loadmore', 'ListTopicController@loadMore');
 
     ////
     Route::get('/search', 'SearchController@index');
@@ -98,14 +99,14 @@ Route::group(['middleware' => ['auth', 'company']], function () {
 //Routes only accessable by student
 Route::group(['middleware' => ['auth', 'student']], function () {
 
-    //Student Profile
+    //Student Profile -done
     Route::get('student/profile/', 'StudentsController@index');
     Route::get('student/create/profile', 'StudentsController@create');
     Route::post('student/profile/update', 'StudentsController@store');
     Route::post('/dropzone', 'StudentsController@upload');
-    //Student CV
+    //Student CV - done
     Route::get('student/cv', 'StudentCvController@create');
-    Route::post('student/cv', 'StudentCvController@store');
+    Route::post('student/cv/update', 'StudentCvController@store');
 
     //Student Aspiration
     Route::get('student/create/aspiration', 'AspirationController@create');
