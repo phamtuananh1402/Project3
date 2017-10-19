@@ -292,7 +292,6 @@
 </div>
 
 @include('layouts.subfooter')
-@include('auth.signin')
 
 <script>
     // Get the modal
