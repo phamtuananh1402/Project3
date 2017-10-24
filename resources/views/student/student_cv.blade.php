@@ -1,4 +1,9 @@
-@extends('layouts.profile') @section('title') Student - CV @endsection @section('content')
+@extends('layouts.profile')
+@section('title')
+ Student - CV 
+@endsection 
+
+@section('content')
 <!-- BEGIN PAGE BASE CONTENT -->
 <div class="profile">
     <div class="tabbable-line tabbable-full-width">

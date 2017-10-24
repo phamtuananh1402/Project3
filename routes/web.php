@@ -113,8 +113,8 @@ Route::group(['middleware' => ['auth', 'student']], function () {
     Route::post('student/aspiration/', 'AspirationController@store');
 
     //Student Report
-    Route::get('/student/intern', 'ReportController@create');
-    Route::post('/student/intern', 'ReportController@store');
+    // Route::get('/student/intern', 'ReportController@create');
+    Route::post('/student/intern', 'InternProcessController@store');
     Route::get('/student/mark', 'StudentMarkController@index');
 
     //Student Intern Process
@@ -137,7 +137,6 @@ Route::group(['middleware' => ['auth', 'manager']], function () {
     Route::get('/match', 'MatchingController@matchingFull');
     Route::get('/parser/approve', 'MatchingController@store');
     Route::get('/parser/decline', 'MatchingController@destroy');
-
 
     /* Assign Student */
     Route::get('/assign', 'AssignmentController@store');
@@ -170,7 +169,6 @@ Route::group(['middleware' => ['auth', 'lecturer']], function () {
     Route::post('/teacher/lecturer/{lecturer_id}', 'LecturerController@store');
     Route::get('/lecturer/intern', 'LecturerProgressController@index');
 
-
     //Lecturer Marking
     Route::get('lecturer/mark', 'MarkingController@index');
     //Route::get('lecturer/intern', 'MarkingController@create');
@@ -181,8 +179,12 @@ Route::group(['middleware' => ['auth', 'lecturer']], function () {
 });
 
 //Routes only accessable by instructor
-Route::group(['middleware' => ['auth', 'instructor']], function () {
-
+Route::group(['middleware' => ['auth','instructor']], function () {
+    Route::get('/instructor/outline/{topicId}','OutlineController@createOutline');
+    Route::post('/instructor/outline/store','OutlineController@store');
+    Route::post('/instructor/outline/work/done','OutlineController@workDone');
+    Route::post('/instructor/outline/work/fail','OutlineController@workFail');
+    Route::get('/outline/manage/{student_id}','OutlineController@outlineManage');
     Route::get('/company/instructor/{instructor_id}', 'InstructorController@index');//thieu view
     //Instructor profile
     Route::get('instructor/create/profile', 'InstructorController@create');//thieu view
@@ -191,6 +193,7 @@ Route::group(['middleware' => ['auth', 'instructor']], function () {
     //Route::get('instructor/timekeeping', 'TimeKeepingController@index');
     Route::get('instructor/intern', 'InstructorProgressController@create');
     Route::post('instructor/internship', 'InstructorProgressController@store');
+    
 
     //intern progress
 

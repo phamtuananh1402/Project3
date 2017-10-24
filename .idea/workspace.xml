@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="60997798-bcce-4a1c-b4e6-ae48758a5197" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/InternProcessController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/InternProcessController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,8 +22,8 @@
       <file leaf-file-name="login.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/auth/login.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="68" column="33" lean-forward="false" selection-start-line="68" selection-start-column="33" selection-end-line="68" selection-end-column="33" />
+            <state relative-caret-position="136">
+              <caret line="58" column="70" lean-forward="true" selection-start-line="58" selection-start-column="70" selection-end-line="58" selection-end-column="70" />
               <folding />
             </state>
           </provider>
@@ -181,6 +183,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -217,13 +220,12 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="E:/dman-shop" />
+    <property name="last_opened_file_path" value="E:/dman-store" />
     <property name="SearchEverywhereHistoryKey" value="web.&#9;FILE&#9;file://E:/Project3/routes/web.php&#10;form-validation-md.min.js&#9;FILE&#9;file://E:/Project3/public/assets/pages/scripts/form-validation-md.min.js&#10;prof&#9;FILE&#9;file://E:/Project3/resources/views/layouts/profile.blade.php&#10;profileblade&#9;FILE&#9;file://E:/Project3/resources/views/student/student_profile.blade.php&#10;web.p&#9;FILE&#9;file://E:/Project3/routes/web.php&#10;studentscontr&#9;FILE&#9;file://E:/Project3/app/Http/Controllers/StudentsController.php&#10;periodma&#9;FILE&#9;file://E:/xampp/htdocs/project2-backup/resources/views/period/periodmanage.blade.php&#10;carbon.php&#9;FILE&#9;file://E:/xampp/htdocs/project2-backup/vendor/nesbot/carbon/src/Carbon/Carbon.php&#10;periodcon&#9;FILE&#9;file://E:/xampp/htdocs/project2-backup/app/Http/Controllers/PeriodController.php&#10;failedcontro&#9;null&#9;null&#10;grade.&#9;FILE&#9;file://E:/xampp/htdocs/project2-backup/resources/views/admin/grade.blade.php&#10;reportcon&#9;FILE&#9;file://E:/xampp/htdocs/project2-backup/app/Http/Controllers/ReportController.php&#10;lecturer&#9;FILE&#9;file://E:/xampp/htdocs/project2-backup/resources/views/lecturer/lecturerprogress.blade.php&#10;studentintern&#9;FILE&#9;file://E:/xampp/htdocs/project2-backup/resources/views/student/studentinternprocess.blade.php&#10;topicsc&#9;FILE&#9;file://E:/xampp/htdocs/project2-backup/public/js/topicscript.js&#10;topiccen&#9;FILE&#9;file://E:/xampp/htdocs/project2-backup/app/Http/Controllers/TopicCensorController.php&#10;period&#9;FILE&#9;file://E:/xampp/htdocs/project2-backup/resources/views/period/periodmanage.blade.php&#10;web&#9;FILE&#9;file://E:/xampp/htdocs/project2-backup/routes/web.php&#10;topicscr&#9;FILE&#9;file://E:/xampp/htdocs/project2-backup/public/js/topicscript.js&#10;topicre&#9;FILE&#9;file://E:/xampp/htdocs/project2-backup/resources/views/manager/topicrequest.blade.php&#10;companystd.j&#9;FILE&#9;file://E:/xampp/htdocs/project2-backup/public/js/companystd.js&#10;addstd&#9;FILE&#9;file://E:/xampp/htdocs/project2-backup/resources/views/period/managementteacheraddstd.blade.php&#10;topic&#9;FILE&#9;file://E:/xampp/htdocs/project2-backup/public/js/topicscript.js&#10;instructorprogres&#9;FILE&#9;file://E:/xampp/htdocs/project2-backup/resources/views/instructor/instructorprogress.blade.php&#10;timekee&#9;null&#9;null&#10;columnout&#9;null&#9;null&#10;instructorprog&#9;FILE&#9;file://E:/xampp/htdocs/project2-backup/app/Http/Controllers/InstructorProgressController.php&#10;repcontro&#9;FILE&#9;file://E:/xampp/htdocs/project2-backup/app/Http/Controllers/RepresentationCompanyController.php&#10;repcontr&#9;FILE&#9;file://E:/xampp/htdocs/project2-backup/app/Http/Controllers/ReportController.php&#10;instructorcontr&#9;null&#9;null&#10;studentcontr&#9;FILE&#9;file://E:/xampp/htdocs/project2-backup/app/Http/Controllers/StudentsController.php&#10;studenti&#9;FILE&#9;file://E:/xampp/htdocs/project2-backup/resources/views/student/studentinfo.blade.php&#10;lecturercontro&#9;null&#9;null&#10;lecturerin&#9;FILE&#9;file://E:/xampp/htdocs/project2-backup/resources/views/lecturer/lecturerinfo.blade.php&#10;studentinf&#9;FILE&#9;file://E:/xampp/htdocs/project2-backup/resources/views/student/studentinfo.blade.php&#10;files&#9;FILE&#9;file://E:/xampp/htdocs/project2-backup/config/filesystems.php&#10;instructor&#9;FILE&#9;file://E:/xampp/htdocs/project2-backup/resources/views/instructor/instructorprogress.blade.php&#10;filesystems.ph&#9;FILE&#9;file://E:/xampp/htdocs/project2-backup/config/filesystems.php&#10;filesys&#9;null&#9;null&#10;filesyste&#9;null&#9;null&#10;instructorpr&#9;FILE&#9;file://E:/xampp/htdocs/project2-backup/app/Http/Controllers/InstructorProgressController.php&#10;timekeepingcontr&#9;FILE&#9;file://E:/xampp/htdocs/project2-backup/app/Http/Controllers/TimeKeepingController.php&#10;outlinecontr&#9;null&#9;null&#10;.env&#9;FILE&#9;file://E:/xampp/htdocs/project2-backup/.env&#10;add_filena&#9;FILE&#9;file://E:/xampp/htdocs/project2-backup/database/migrations/2017_05_24_062032_add_filename_column_to_table_report.php&#10;repo&#9;FILE&#9;file://E:/xampp/htdocs/project2-backup/app/Http/Controllers/ReportController.php&#10;report.&#9;FILE&#9;file://E:/xampp/htdocs/project2-backup/app/Report.php&#10;reportcontr&#9;FILE&#9;file://E:/xampp/htdocs/project2-backup/app/Http/Controllers/ReportController.php&#10;matching&#9;FILE&#9;file://E:/xampp/htdocs/project2-backup/app/Matching.php&#10;represencontro&#9;null&#9;null" />
     <property name="js.eslint.eslintPackage" value="" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
@@ -441,14 +443,16 @@
       <workItem from="1503221980153" duration="7000" />
       <workItem from="1508296995880" duration="4810000" />
       <workItem from="1508393865757" duration="25000" />
+      <workItem from="1508721275362" duration="45000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="329193000" />
+    <option name="totallyTimeSpent" value="329238000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19692533" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -830,8 +834,8 @@
     <entry file="file://$PROJECT_DIR$/resources/views/auth/signin.blade.php" />
     <entry file="file://$PROJECT_DIR$/resources/views/auth/login.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="68" column="33" lean-forward="false" selection-start-line="68" selection-start-column="33" selection-end-line="68" selection-end-column="33" />
+        <state relative-caret-position="136">
+          <caret line="58" column="70" lean-forward="true" selection-start-line="58" selection-start-column="70" selection-end-line="58" selection-end-column="70" />
           <folding />
         </state>
       </provider>

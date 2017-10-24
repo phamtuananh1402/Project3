@@ -5,15 +5,18 @@ namespace App\Http\Controllers;
 use App\InstructorCompany;
 use App\RepresentationCompany;
 use App\Students;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
-
+use Validator;
+use \Storage;
+use Carbon\Carbon;
 class OutlineController extends Controller
 {
 
     public function __construct()
     {
-        $this->middleware('company');
+        $this->middleware('instructor');
     }
 
     public function index(Students $students, InstructorCompany $instructor)
@@ -33,10 +36,51 @@ class OutlineController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function createOutline(InstructorCompany $instructor,$topicId)
     {
-        //
-        return view('company.outline');
+        
+        $idInstructor = $instructor->retrieveInstructorId();
+        
+        $idStudents = DB::table('assignment')->where('topic_id',$topicId)->get();
+        
+        return view('instructor.create_outline',compact('idStudents','idInstructor','topicId'));
+    }
+    public function outlineManage($student_id)
+    {
+
+        /* Begin Intern Process part*/
+        $student = DB::table('students')->where('student_id', '=', $student_id)->first();
+        $evaluation = DB::table('evaluation')->where('student_id', '=', $student_id)->get();
+        //instructor info
+        $instructorId = DB::table('student_instructor_company')->where('student_id', '=', $student_id)->pluck('instructor_id');
+        $instructor = DB::table('instructor_company')->where('instructor_id', '=', $instructorId)->first();
+        //company info
+        $companyId = DB::table('instructor_company')->where('instructor_id', $instructorId)->pluck('company_id');
+        $company = DB::table('company')->where('company_id', $companyId)->first();
+        //Topic info
+        $repId = DB::table('representation_company')->where('company_id', '=', $companyId)->pluck('representation_id');
+        $topicId = DB::table('topic')->where('representation_id', '=', $repId)->pluck('topic_id');
+        $topic = DB::table('topic')->where('topic_id', '=', $topicId)->first();
+        //Period Info
+        $periodId = DB::table('periods_students')->where('student_id', '=', $student_id)->pluck('period_id');
+        $period = DB::table('periods')->where('id', '=', $periodId)->first();
+        $endDate = $period->end_date;
+        $endDateCarbon = new Carbon($endDate);
+        $endDateFeedback = $endDateCarbon->addWeeks(200);
+        /* End Intern Process part */
+        /* Begin Outline part*/
+        $outline = DB::table('outline_work')->where('student_id','=',$student_id)->groupBy('week')->get();
+        $allWeek = DB::table('outline_work')->where('student_id','=',$student_id)->groupBy('week')->pluck('week');
+        $countWorking = DB::table('outline_work')->select(DB::raw('COUNT(work) as working'))
+                        ->where('student_id',$student_id)->where('status','=','Working')->first();
+        $countWorked = DB::table('outline_work')->select(DB::raw('COUNT(work) as done'))
+                        ->where('student_id',$student_id)->where('status','=','Done')->first();
+        //$workByWeek = DB::table('outline_work')->where('student_id',$id)->whereIn('week',$allWeek)->get();
+        return view('student.student_intern_process', 
+        compact('student', 'instructor', 'topic', 'company', 
+                'evaluation', 'endDateFeedback','outline',
+                'countWorking','countWorked','student_id'));
+        
     }
 
     /**
@@ -47,20 +91,35 @@ class OutlineController extends Controller
      */
     public function store(Request $request)
     {
-        //
-        DB::table('outline')
-            ->insert([
-                'link' => $request->link,
-                'instructor_id' => Auth::user()->user_id,
-                'student_id' => $request->student_id,
-                'topic_id' => $request->topic_id,
-                'created_at' => date('Y-m-d H-m-s')
+       
+        if($request->ajax()){
+            DB::table('outline_work')->insert([
+                'instructor_id'=> Auth::user()->user_id,
+                'topic_id'=> $request->topic_id,
+                'student_id'=> $request->student_id,
+                'status'=>'Working',
+                'week' => $request->week,
+                'work' => $request->work,
+                'work_content' => $request->work_content
             ]);
+        }
+        return redirect()->back();
+    
+        //return response()->json(['error' => $validator->errors()->all()]);
 
-        $activity = 'Updated Outline';
-        LogsController::logging($activity);
+    }
 
-        return redirect('/instructor/timekeeping');
+    public function workDone(Request $request)
+    {
+        DB::table('outline_work')->where('topic_id',$topicId)->where('student_id',$request->student_id)->update([
+            'status'=>'Done'
+        ]);
+    }
+    public function workFail(Request $request)
+    {
+        DB::table('outline_work')->where('topic_id',$topicId)->where('student_id',$request->student_id)->update([
+            'status'=>'Failed'
+        ]);
     }
 
     /**
