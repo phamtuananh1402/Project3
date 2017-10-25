@@ -179,6 +179,7 @@ Route::group(['middleware' => ['auth', 'lecturer']], function () {
 
 //Routes only accessable by instructor
 Route::group(['middleware' => ['auth','instructor']], function () {
+    //Instructor outline management - Done
     Route::get('/instructor/outline/{topicId}','OutlineController@createOutline');
     Route::post('/instructor/outline/store','OutlineController@store');
     Route::post('/instructor/outline/work/done','OutlineController@workDone');
