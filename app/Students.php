@@ -57,19 +57,7 @@ class Students extends Model
     public function addCv()
     {
         $id = Students::retrieveStudentId();
-        $level_student_cv = new Level();
-        $skill_student_cv = new Skills();
-        DB::table('student_cv')->where('student_id', $id)->update([
-            'student_id' => Auth::user()->user_id,
-            'info' => request('info'),
-            'email' => request('email'),
-            'phone_number' => request('phone_number'),
-            'purpose' => request('purpose'),
-            'updated_at' => date('Y-m-d H-m-s')
-
-        ]);
-
-        $skill_student_cv->addSkillsCv();
+        
     }
 
     public function gotCompany()

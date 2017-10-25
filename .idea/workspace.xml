@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="60997798-bcce-4a1c-b4e6-ae48758a5197" name="Default" comment="" />
+    <list default="true" id="60997798-bcce-4a1c-b4e6-ae48758a5197" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/InternProcessController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/InternProcessController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,21 +18,21 @@
     <option name="PATCH_PATH" value="" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="login.blade.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/views/auth/login.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="58" column="70" lean-forward="true" selection-start-line="58" selection-start-column="70" selection-end-line="58" selection-end-column="70" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>admin/grade</find>
-      <find>decline</find>
-      <find>form</find>
-      <find>field</find>
-      <find>text</find>
-      <find>em</find>
-      <find>&lt;form</find>
-      <find>reportController</find>
-      <find>admin</find>
-      <find>startDatePicker</find>
-      <find>endDate</find>
       <find>startDate</find>
       <find>bootstrap.js</find>
       <find>eventform</find>
@@ -48,16 +52,25 @@
       <find>report</find>
       <find>fail</find>
       <find>not</find>
+      <find>StudentsController</find>
+      <find>storage</find>
+      <find>date_of</find>
+      <find>form</find>
+      <find>edit_information</find>
+      <find>semester</find>
+      <find>class</find>
+      <find>student-&gt;class</find>
+      <find>$student-&gt;class</find>
+      <find>onclick</find>
+      <find>first_name</find>
     </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$USER_HOME$/Desktop/duyệt topic/controller/TopicCensorController.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/TopicCensorController.php" />
-        <option value="$PROJECT_DIR$/public/css/internshipteachertopicrequest.css" />
-        <option value="$PROJECT_DIR$/resources/views/company/internship.blade.php" />
-        <option value="$PROJECT_DIR$/public/js/internassign.js" />
         <option value="$PROJECT_DIR$/public/css/companystd.css" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/CompanyAssignController.php" />
         <option value="$PROJECT_DIR$/public/js/companystd.js" />
@@ -85,16 +98,13 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/RepresentationCompanyController.php" />
         <option value="$PROJECT_DIR$/app/Matching.php" />
         <option value="$PROJECT_DIR$/database/migrations/2017_05_24_062032_add_filename_column_to_table_report.php" />
-        <option value="$PROJECT_DIR$/config/filesystems.php" />
         <option value="$PROJECT_DIR$/resources/views/student/studentinfo.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/LecturerController.php" />
         <option value="$PROJECT_DIR$/resources/views/lecturer/lecturerinfo.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/InstructorController.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/StudentsController.php" />
         <option value="$PROJECT_DIR$/database/migrations/2017_05_24_075845_add_column_filename_to_outline_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2017_05_24_075900_add_column_filename_to_timekeeping_table.php" />
         <option value="$PROJECT_DIR$/resources/views/contentfile.blade.php" />
-        <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/resources/views/period/managementteacheraddstd.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/manager/topicrequest.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/instructor/instructorprogress.blade.php" />
@@ -104,6 +114,14 @@
         <option value="$PROJECT_DIR$/resources/views/admin/grade.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/period/periodmanage.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/FailedController.php" />
+        <option value="$PROJECT_DIR$/config/app.php" />
+        <option value="$PROJECT_DIR$/config/filesystems.php" />
+        <option value="$PROJECT_DIR$/public/assets/pages/scripts/form-validation-md.min.js" />
+        <option value="$PROJECT_DIR$/resources/views/layouts/profile.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/StudentsController.php" />
+        <option value="$PROJECT_DIR$/routes/web.php" />
+        <option value="$PROJECT_DIR$/resources/views/student/student_profile.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/auth/login.blade.php" />
       </list>
     </option>
   </component>
@@ -128,7 +146,7 @@
     <servers />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1382" />
@@ -166,14 +184,49 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
-      <pane id="ProjectPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Project3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Project3" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="Project3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Project3" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="Project3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Project3" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="Project3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Project3" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="auth" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="Project3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Project3" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="student" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../dman-shop" />
-    <property name="SearchEverywhereHistoryKey" value="periodma&#9;FILE&#9;file://E:/xampp/htdocs/project2-backup/resources/views/period/periodmanage.blade.php&#10;carbon.php&#9;FILE&#9;file://E:/xampp/htdocs/project2-backup/vendor/nesbot/carbon/src/Carbon/Carbon.php&#10;periodcon&#9;FILE&#9;file://E:/xampp/htdocs/project2-backup/app/Http/Controllers/PeriodController.php&#10;failedcontro&#9;null&#9;null&#10;web.&#9;FILE&#9;file://E:/xampp/htdocs/project2-backup/routes/web.php&#10;grade.&#9;FILE&#9;file://E:/xampp/htdocs/project2-backup/resources/views/admin/grade.blade.php&#10;reportcon&#9;FILE&#9;file://E:/xampp/htdocs/project2-backup/app/Http/Controllers/ReportController.php&#10;lecturer&#9;FILE&#9;file://E:/xampp/htdocs/project2-backup/resources/views/lecturer/lecturerprogress.blade.php&#10;studentintern&#9;FILE&#9;file://E:/xampp/htdocs/project2-backup/resources/views/student/studentinternprocess.blade.php&#10;topicsc&#9;FILE&#9;file://E:/xampp/htdocs/project2-backup/public/js/topicscript.js&#10;topiccen&#9;FILE&#9;file://E:/xampp/htdocs/project2-backup/app/Http/Controllers/TopicCensorController.php&#10;period&#9;FILE&#9;file://E:/xampp/htdocs/project2-backup/resources/views/period/periodmanage.blade.php&#10;web&#9;FILE&#9;file://E:/xampp/htdocs/project2-backup/routes/web.php&#10;topicscr&#9;FILE&#9;file://E:/xampp/htdocs/project2-backup/public/js/topicscript.js&#10;topicre&#9;FILE&#9;file://E:/xampp/htdocs/project2-backup/resources/views/manager/topicrequest.blade.php&#10;companystd.j&#9;FILE&#9;file://E:/xampp/htdocs/project2-backup/public/js/companystd.js&#10;addstd&#9;FILE&#9;file://E:/xampp/htdocs/project2-backup/resources/views/period/managementteacheraddstd.blade.php&#10;topic&#9;FILE&#9;file://E:/xampp/htdocs/project2-backup/public/js/topicscript.js&#10;instructorprogres&#9;FILE&#9;file://E:/xampp/htdocs/project2-backup/resources/views/instructor/instructorprogress.blade.php&#10;timekee&#9;null&#9;null&#10;columnout&#9;null&#9;null&#10;instructorprog&#9;FILE&#9;file://E:/xampp/htdocs/project2-backup/app/Http/Controllers/InstructorProgressController.php&#10;repcontro&#9;FILE&#9;file://E:/xampp/htdocs/project2-backup/app/Http/Controllers/RepresentationCompanyController.php&#10;repcontr&#9;FILE&#9;file://E:/xampp/htdocs/project2-backup/app/Http/Controllers/ReportController.php&#10;instructorcontr&#9;null&#9;null&#10;studentcontr&#9;FILE&#9;file://E:/xampp/htdocs/project2-backup/app/Http/Controllers/StudentsController.php&#10;studenti&#9;FILE&#9;file://E:/xampp/htdocs/project2-backup/resources/views/student/studentinfo.blade.php&#10;lecturercontro&#9;null&#9;null&#10;lecturerin&#9;FILE&#9;file://E:/xampp/htdocs/project2-backup/resources/views/lecturer/lecturerinfo.blade.php&#10;studentinf&#9;FILE&#9;file://E:/xampp/htdocs/project2-backup/resources/views/student/studentinfo.blade.php&#10;files&#9;FILE&#9;file://E:/xampp/htdocs/project2-backup/config/filesystems.php&#10;instructor&#9;FILE&#9;file://E:/xampp/htdocs/project2-backup/resources/views/instructor/instructorprogress.blade.php&#10;filesystems.ph&#9;FILE&#9;file://E:/xampp/htdocs/project2-backup/config/filesystems.php&#10;filesys&#9;null&#9;null&#10;filesyste&#9;null&#9;null&#10;instructorpr&#9;FILE&#9;file://E:/xampp/htdocs/project2-backup/app/Http/Controllers/InstructorProgressController.php&#10;timekeepingcontr&#9;FILE&#9;file://E:/xampp/htdocs/project2-backup/app/Http/Controllers/TimeKeepingController.php&#10;outlinecontr&#9;null&#9;null&#10;.env&#9;FILE&#9;file://E:/xampp/htdocs/project2-backup/.env&#10;add_filena&#9;FILE&#9;file://E:/xampp/htdocs/project2-backup/database/migrations/2017_05_24_062032_add_filename_column_to_table_report.php&#10;repo&#9;FILE&#9;file://E:/xampp/htdocs/project2-backup/app/Http/Controllers/ReportController.php&#10;report.&#9;FILE&#9;file://E:/xampp/htdocs/project2-backup/app/Report.php&#10;reportcontr&#9;FILE&#9;file://E:/xampp/htdocs/project2-backup/app/Http/Controllers/ReportController.php&#10;matching&#9;FILE&#9;file://E:/xampp/htdocs/project2-backup/app/Matching.php&#10;represencontro&#9;null&#9;null&#10;studentsc&#9;null&#9;null&#10;studentcvcontr&#9;null&#9;null&#10;studentcvbl&#9;FILE&#9;file://E:/xampp/htdocs/project2-backup/resources/views/student/studentcv.blade.php&#10;represen&#9;FILE&#9;file://E:/xampp/htdocs/project2-backup/resources/views/company/representation_profile.blade.php&#10;apply&#9;FILE&#9;file://E:/xampp/htdocs/project2-backup/resources/views/company/studentapply.blade.php" />
+    <property name="last_opened_file_path" value="E:/dman-store" />
+    <property name="SearchEverywhereHistoryKey" value="web.&#9;FILE&#9;file://E:/Project3/routes/web.php&#10;form-validation-md.min.js&#9;FILE&#9;file://E:/Project3/public/assets/pages/scripts/form-validation-md.min.js&#10;prof&#9;FILE&#9;file://E:/Project3/resources/views/layouts/profile.blade.php&#10;profileblade&#9;FILE&#9;file://E:/Project3/resources/views/student/student_profile.blade.php&#10;web.p&#9;FILE&#9;file://E:/Project3/routes/web.php&#10;studentscontr&#9;FILE&#9;file://E:/Project3/app/Http/Controllers/StudentsController.php&#10;periodma&#9;FILE&#9;file://E:/xampp/htdocs/project2-backup/resources/views/period/periodmanage.blade.php&#10;carbon.php&#9;FILE&#9;file://E:/xampp/htdocs/project2-backup/vendor/nesbot/carbon/src/Carbon/Carbon.php&#10;periodcon&#9;FILE&#9;file://E:/xampp/htdocs/project2-backup/app/Http/Controllers/PeriodController.php&#10;failedcontro&#9;null&#9;null&#10;grade.&#9;FILE&#9;file://E:/xampp/htdocs/project2-backup/resources/views/admin/grade.blade.php&#10;reportcon&#9;FILE&#9;file://E:/xampp/htdocs/project2-backup/app/Http/Controllers/ReportController.php&#10;lecturer&#9;FILE&#9;file://E:/xampp/htdocs/project2-backup/resources/views/lecturer/lecturerprogress.blade.php&#10;studentintern&#9;FILE&#9;file://E:/xampp/htdocs/project2-backup/resources/views/student/studentinternprocess.blade.php&#10;topicsc&#9;FILE&#9;file://E:/xampp/htdocs/project2-backup/public/js/topicscript.js&#10;topiccen&#9;FILE&#9;file://E:/xampp/htdocs/project2-backup/app/Http/Controllers/TopicCensorController.php&#10;period&#9;FILE&#9;file://E:/xampp/htdocs/project2-backup/resources/views/period/periodmanage.blade.php&#10;web&#9;FILE&#9;file://E:/xampp/htdocs/project2-backup/routes/web.php&#10;topicscr&#9;FILE&#9;file://E:/xampp/htdocs/project2-backup/public/js/topicscript.js&#10;topicre&#9;FILE&#9;file://E:/xampp/htdocs/project2-backup/resources/views/manager/topicrequest.blade.php&#10;companystd.j&#9;FILE&#9;file://E:/xampp/htdocs/project2-backup/public/js/companystd.js&#10;addstd&#9;FILE&#9;file://E:/xampp/htdocs/project2-backup/resources/views/period/managementteacheraddstd.blade.php&#10;topic&#9;FILE&#9;file://E:/xampp/htdocs/project2-backup/public/js/topicscript.js&#10;instructorprogres&#9;FILE&#9;file://E:/xampp/htdocs/project2-backup/resources/views/instructor/instructorprogress.blade.php&#10;timekee&#9;null&#9;null&#10;columnout&#9;null&#9;null&#10;instructorprog&#9;FILE&#9;file://E:/xampp/htdocs/project2-backup/app/Http/Controllers/InstructorProgressController.php&#10;repcontro&#9;FILE&#9;file://E:/xampp/htdocs/project2-backup/app/Http/Controllers/RepresentationCompanyController.php&#10;repcontr&#9;FILE&#9;file://E:/xampp/htdocs/project2-backup/app/Http/Controllers/ReportController.php&#10;instructorcontr&#9;null&#9;null&#10;studentcontr&#9;FILE&#9;file://E:/xampp/htdocs/project2-backup/app/Http/Controllers/StudentsController.php&#10;studenti&#9;FILE&#9;file://E:/xampp/htdocs/project2-backup/resources/views/student/studentinfo.blade.php&#10;lecturercontro&#9;null&#9;null&#10;lecturerin&#9;FILE&#9;file://E:/xampp/htdocs/project2-backup/resources/views/lecturer/lecturerinfo.blade.php&#10;studentinf&#9;FILE&#9;file://E:/xampp/htdocs/project2-backup/resources/views/student/studentinfo.blade.php&#10;files&#9;FILE&#9;file://E:/xampp/htdocs/project2-backup/config/filesystems.php&#10;instructor&#9;FILE&#9;file://E:/xampp/htdocs/project2-backup/resources/views/instructor/instructorprogress.blade.php&#10;filesystems.ph&#9;FILE&#9;file://E:/xampp/htdocs/project2-backup/config/filesystems.php&#10;filesys&#9;null&#9;null&#10;filesyste&#9;null&#9;null&#10;instructorpr&#9;FILE&#9;file://E:/xampp/htdocs/project2-backup/app/Http/Controllers/InstructorProgressController.php&#10;timekeepingcontr&#9;FILE&#9;file://E:/xampp/htdocs/project2-backup/app/Http/Controllers/TimeKeepingController.php&#10;outlinecontr&#9;null&#9;null&#10;.env&#9;FILE&#9;file://E:/xampp/htdocs/project2-backup/.env&#10;add_filena&#9;FILE&#9;file://E:/xampp/htdocs/project2-backup/database/migrations/2017_05_24_062032_add_filename_column_to_table_report.php&#10;repo&#9;FILE&#9;file://E:/xampp/htdocs/project2-backup/app/Http/Controllers/ReportController.php&#10;report.&#9;FILE&#9;file://E:/xampp/htdocs/project2-backup/app/Report.php&#10;reportcontr&#9;FILE&#9;file://E:/xampp/htdocs/project2-backup/app/Http/Controllers/ReportController.php&#10;matching&#9;FILE&#9;file://E:/xampp/htdocs/project2-backup/app/Matching.php&#10;represencontro&#9;null&#9;null" />
     <property name="js.eslint.eslintPackage" value="" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
@@ -388,26 +441,30 @@
       <workItem from="1495615180530" duration="1875000" />
       <workItem from="1502435303889" duration="216000" />
       <workItem from="1503221980153" duration="7000" />
+      <workItem from="1508296995880" duration="4810000" />
+      <workItem from="1508393865757" duration="25000" />
+      <workItem from="1508721275362" duration="45000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="324358000" />
+    <option name="totallyTimeSpent" value="329238000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="754" extended-state="0" />
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2708018" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19692533" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -437,69 +494,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Builder/Match.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/UserController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
-          <caret line="26" column="33" lean-forward="false" selection-start-line="26" selection-start-column="33" selection-end-line="26" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/layouts/app.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="27" column="29" lean-forward="false" selection-start-line="27" selection-start-column="29" selection-end-line="27" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/auth/login.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="23" column="42" lean-forward="true" selection-start-line="19" selection-start-column="34" selection-end-line="23" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/users.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="171" column="50" lean-forward="true" selection-start-line="171" selection-start-column="50" selection-end-line="171" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/manager/managementteacher.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1045">
-          <caret line="55" column="0" lean-forward="true" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/newuser.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-798">
-          <caret line="153" column="54" lean-forward="true" selection-start-line="149" selection-start-column="48" selection-end-line="153" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/layouts/formdatepicker.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="29" column="6" lean-forward="true" selection-start-line="29" selection-start-column="6" selection-end-line="29" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/periodmanage.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="368" column="26" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="470" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/js/periodmanage.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -605,13 +599,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/filesystems.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="58" column="0" lean-forward="true" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/RepresentationCompanyController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
@@ -626,13 +613,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/StudentsController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="50" column="5" lean-forward="true" selection-start-line="50" selection-start-column="5" selection-end-line="50" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/LecturerController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="422">
@@ -644,13 +624,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
           <caret line="161" column="117" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="301" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/student/studentinfo.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="210" column="25" lean-forward="false" selection-start-line="210" selection-start-column="25" selection-end-line="210" selection-end-column="25" />
         </state>
       </provider>
     </entry>
@@ -752,13 +725,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1197">
-          <caret line="63" column="21" lean-forward="false" selection-start-line="63" selection-start-column="17" selection-end-line="63" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/admin/grade.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5700">
@@ -791,6 +757,86 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
           <caret line="580" column="0" lean-forward="false" selection-start-line="580" selection-start-column="0" selection-end-line="580" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/auth.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-595">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/broadcasting.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/cache.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="53" column="49" lean-forward="true" selection-start-line="53" selection-start-column="49" selection-end-line="53" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/filesystems.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="53" column="80" lean-forward="false" selection-start-line="53" selection-start-column="80" selection-end-line="53" selection-end-column="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/app.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="226" column="17" lean-forward="true" selection-start-line="226" selection-start-column="17" selection-end-line="226" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/student/studentinfo.blade.php" />
+    <entry file="file://$PROJECT_DIR$/public/assets/pages/scripts/form-validation-md.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="33" column="18" lean-forward="false" selection-start-line="33" selection-start-column="18" selection-end-line="33" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/student/student_profile.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="329">
+          <caret line="430" column="25" lean-forward="false" selection-start-line="430" selection-start-column="25" selection-end-line="430" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="108" column="67" lean-forward="false" selection-start-line="108" selection-start-column="67" selection-end-line="108" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/StudentsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1156">
+          <caret line="73" column="34" lean-forward="true" selection-start-line="73" selection-start-column="34" selection-end-line="73" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/profile.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="423">
+          <caret line="224" column="0" lean-forward="false" selection-start-line="224" selection-start-column="0" selection-end-line="224" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/auth/signin.blade.php" />
+    <entry file="file://$PROJECT_DIR$/resources/views/auth/login.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="58" column="70" lean-forward="true" selection-start-line="58" selection-start-column="70" selection-end-line="58" selection-end-column="70" />
+          <folding />
         </state>
       </provider>
     </entry>

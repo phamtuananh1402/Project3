@@ -11,9 +11,29 @@ class ListTopicController extends Controller
 
     public function index()
     {
-        $topic = DB::table('topic')->where('status', '=', 'Approved')->paginate(10);;
-        //$topic = $topics->forPage(5, 5);
-        return view('topic.listtopic', compact('topic'));
+        $topic = DB::table('topic')->join('topic_skills','topic.topic_id','=','topic_skills.topic_id')
+        ->join('topic_field','topic.topic_id','=','topic_field.topic_id')
+        ->select(DB::raw('topic.topic_id,topic.title,topic_field.field_name,topic_skills.skills_name'))
+        ->where('topic.status','=', 'Approved')->groupBy('topic.topic_id')
+        ->take(24)->get();        
+        $fieldList = DB::table('topic_field')->groupBy('field_name')->get();
+        return view('topic.topic_list', compact('topic','fieldList'));
+    }
+
+    public function loadMore()
+    {
+        # code...
+        $loadFirst = DB::table('topic')->join('topic_skills','topic.topic_id','=','topic_skills.topic_id')
+        ->join('topic_field','topic.topic_id','=','topic_field.topic_id')
+        ->select(DB::raw('topic.topic_id,topic.title,topic_field.field_name,topic_skills.skills_name'))
+        ->where('topic.status','=', 'Approved')->where('topic.id','>',24)->groupBy('topic.topic_id')->orderBy('topic.id','asc')
+        ->take(4)->get();  
+        $loadSecond = DB::table('topic')->join('topic_skills','topic.topic_id','=','topic_skills.topic_id')
+        ->join('topic_field','topic.topic_id','=','topic_field.topic_id')
+        ->select(DB::raw('topic.topic_id,topic.title,topic_field.field_name,topic_skills.skills_name'))
+        ->where('topic.status','=', 'Approved')->where('topic.id','>',48)->groupBy('topic.topic_id')->orderBy('topic.id','asc')
+        ->get();  
+        return view('topic.loadMore',compact('loadFirst','loadSecond'));
     }
 
     /**

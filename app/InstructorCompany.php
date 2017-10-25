@@ -31,11 +31,6 @@ class InstructorCompany extends Model
 
     }
 
-    public function addTimeKeeping()
-    {
-
-    }
-
 
     public function company()
     {

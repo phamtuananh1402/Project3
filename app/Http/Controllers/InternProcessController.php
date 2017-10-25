@@ -18,7 +18,7 @@ class InternProcessController extends Controller
     public function index()
     {
         //
-        return view('student.studentinternprocess');
+        return view('student.student_intern_process');
     }
 
     /**
@@ -38,9 +38,41 @@ class InternProcessController extends Controller
      * @param  \Illuminate\Http\Request $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(Request $request, Students $student)
     {
-        //
+        $id = $students->retrieveStudentId();
+        
+        $file = $request->file('file'); //access dropzone files
+        $contents = Storage::disk('public');
+        $new_name = $file->getClientOriginalName();
+        $fileName = $new_name;
+        $contents->put($fileName, file_get_contents($file->getRealPath()));
+
+        if ($request->hasFile('report')) {
+            $file = $request->report;
+            $file->move('../storage/app/public/', $file->getClientOriginalName());
+            DB::table('report')->where('student_id', $id)
+                ->update([
+                    'link' => asset('storage/' . $file->getClientOriginalName()),
+                    'status' => "Submitted", 'created_at' => date('Y-m-d H-m-s'),
+                    'filename' => $file->getClientOriginalName()
+                ]);
+            redirect('student/intern');
+
+
+        }
+
+        $activity = 'Added Student\'s Report';
+        LogsController::logging($activity);
+
+        // $id = $student->retrieveStudentId();
+        // if($request->ajax()){
+        //     DB::table('student_intern_process')->insert([
+        //         'student_id'->$id,
+        //         'date'->$request->date,
+        //         'commit'->$request->commit
+        //     ]);
+        // }
     }
 
 
@@ -48,6 +80,7 @@ class InternProcessController extends Controller
     {
 
         $id = $students->retrieveStudentId();
+        /* Begin Intern Process part*/
         $student = DB::table('students')->where('student_id', '=', $id)->first();
         $evaluation = DB::table('evaluation')->where('student_id', '=', $id)->get();
         //instructor info
@@ -65,10 +98,25 @@ class InternProcessController extends Controller
         $period = DB::table('periods')->where('id', '=', $periodId)->first();
         $endDate = $period->end_date;
         $endDateCarbon = new Carbon($endDate);
-        $endDateFeedback = $endDateCarbon->addWeeks(2);
-
-
-        return view('student.studentinternprocess', compact('student', 'instructor', 'topic', 'company', 'evaluation', 'endDateFeedback'));
+        $endDateFeedback = $endDateCarbon->addWeeks(200);
+        /* End Intern Process part */
+        /* Begin Outline part*/
+        $outline = DB::table('outline_work')->where('student_id','=',$id)->groupBy('week')->get();
+        $allWeek = DB::table('outline_work')->where('student_id','=',$id)->groupBy('week')->pluck('week');
+        $countWorking = DB::table('outline_work')->select(DB::raw('COUNT(work) as working'))
+                        ->where('student_id',$id)->where('status','=','Working')->first();
+        $countWorked = DB::table('outline_work')->select(DB::raw('COUNT(work) as done'))
+                        ->where('student_id',$id)->where('status','=','Done')->first();
+        /** End Outline part */
+        /** Begin Marking Part */
+        
+        $stdMark = DB::table('mark')->where('student_id', $id)->first();
+        
+        /**End Marking Part */
+        return view('student.student_intern_process', 
+        compact('student', 'instructor', 'topic', 'company', 
+                'evaluation', 'endDateFeedback','outline',
+                'countWorking','countWorked','stdMark'));
 
     }
 
@@ -92,7 +140,7 @@ class InternProcessController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        
     }
 
     /**

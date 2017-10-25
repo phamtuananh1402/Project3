@@ -23,26 +23,38 @@ class StudentCvController extends Controller
     }
 
 
-    public function index($studentsId)
+    public function index($studentId)
     {
 
-        return view('student.studentcv')
-            ->with('student_cv', DB::table('student_cv')->where('student_id', '=', $studentsId)->get())
-            ->with('skill', DB::table('student_cv')
-                ->join('student_cv_skills', 'student_cv.student_id', '=', 'student_cv_skills.student_id')
-                ->where('student_cv_skills.student_id', '=', $studentsId)->get());
-    }
-
-    public function create(Students $student_cv)
-    {
-        $studentId = $student_cv->retrieveStudentId();
-        $student_cv = StudentCv::where('student_id', '=', $studentId)->get();
+        $student_cv = StudentCv::where('student_id', '=', $studentId)->first();
 
         $level = DB::table('level')->get();
         $mySkill = DB::table('student_cv')
             ->join('student_cv_skills', 'student_cv.student_id', '=', 'student_cv_skills.student_id')
             ->where('student_cv_skills.student_id', '=', $studentId)->pluck('skills_name');
-        return view('student.studentcv', compact('student_cv'))
+        return view('student.student_cv', compact('student_cv','level'))
+            ->with('allSkill', DB::table('skills')->get())
+            ->with('users', DB::table('student_cv')
+                ->join('users', 'student_cv.student_id', '=', 'users.user_id')
+                ->where('users.user_id', '=', $studentId)->get())
+            ->with('students', DB::table('student_cv')
+                ->join('students', 'student_cv.student_id', '=', 'students.student_id')
+                ->where('students.student_id', '=', $studentId)->get())
+            ->with('skill', DB::table('student_cv')
+                ->join('student_cv_skills', 'student_cv.student_id', '=', 'student_cv_skills.student_id')
+                ->where('student_cv_skills.student_id', '=', $studentId)->get());
+    }
+
+    public function create(Students $studentcv)
+    {
+        $studentId = $studentcv->retrieveStudentId();
+        $student_cv = StudentCv::where('student_id', '=', $studentId)->first();
+
+        $level = DB::table('level')->get();
+        $mySkill = DB::table('student_cv')
+            ->join('student_cv_skills', 'student_cv.student_id', '=', 'student_cv_skills.student_id')
+            ->where('student_cv_skills.student_id', '=', $studentId)->pluck('skills_name');
+        return view('student.student_cv', compact('student_cv','level'))
             ->with('allSkill', DB::table('skills')->get())
             ->with('users', DB::table('student_cv')
                 ->join('users', 'student_cv.student_id', '=', 'users.user_id')
@@ -61,19 +73,44 @@ class StudentCvController extends Controller
      * @param  \Illuminate\Http\Request $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Students $students)
+    public function store(Students $students, Request $request)
     {
+        $id = $students->retrieveStudentId();
+        if($request->ajax()){
+            $skills = array();
+            $level = array();
+            array_push($skills,$request->skill1);
+            array_push($skills,$request->skill2);
+            array_push($skills,$request->skill3);
+            array_push($level,$request->level1);
+            array_push($level,$request->level2);
+            array_push($level,$request->level3);
+            DB::table('student_cv')->where('student_id', $id)->update([
+                'student_id' => $id,
+                'info' => $request->info,
+                'email' => $request->email,
+                'phone_number' => $request->phone_number,
+                'purpose' => $request->purpose,
+                'updated_at' => date('Y-m-d H-m-s')
 
-        $students->addCv(request([
-            'name',
-            'info',
-            'other_skills',
-            'email',
-            'phone_number',
-            'purpose',
-            'skills_name',
-            'level_name'
-        ]));
+            ]);
+            DB::table('student_cv_skills')->where('student_id',$id)->delete();
+            foreach($skills as $sk){
+                $lv1 = $level[0];
+                DB::table('student_cv_skills')->insert([
+                    'student_id' => $id,
+                    'skills_name' => $sk,
+                    'level_name'=> 'Advanced'
+                ]);
+                DB::table('student_cv_skills')->where('student_id',$id)->where('skills_name', $sk)->update([
+                    'level_name'=> $lv1
+                ]);
+                array_splice($level, 0, 1);
+                unset($lv1);
+            }
+            
+        }
+
         return redirect()->back();
     }
 
