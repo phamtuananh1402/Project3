@@ -45,7 +45,7 @@ class OutlineController extends Controller
         
         return view('instructor.create_outline',compact('idStudents','idInstructor','topicId'));
     }
-    public function outlineManage($student_id)
+    public function internManage($student_id)
     {
 
         /* Begin Intern Process part*/
@@ -76,7 +76,7 @@ class OutlineController extends Controller
         $countWorked = DB::table('outline_work')->select(DB::raw('COUNT(work) as done'))
                         ->where('student_id',$student_id)->where('status','=','Done')->first();
         //$workByWeek = DB::table('outline_work')->where('student_id',$id)->whereIn('week',$allWeek)->get();
-        return view('student.student_intern_process', 
+        return view('instructor.instructor_intern_manage', 
         compact('student', 'instructor', 'topic', 'company', 
                 'evaluation', 'endDateFeedback','outline',
                 'countWorking','countWorked','student_id'));

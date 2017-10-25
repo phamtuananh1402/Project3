@@ -1,6 +1,4 @@
-@extends('layouts.intern_process') 
-@section('title','Student Intern Process')
-@section('content')
+@extends('layouts.intern_process') @section('title','Intern Process Manage') @section('content')
 <!-- END PAGE BREADCRUMB -->
 <!-- BEGIN PAGE BASE CONTENT -->
 <div class="tabbable-line tabbable-full-width">
@@ -40,23 +38,21 @@
                                 <thead>
                                     <tr class="">
                                         <th> Topic </th>
-                                        <th> Startdate </th>
-                                        <th> Company </th>
+                                        <th> Student Name </th>
+                                        <th> Student ID </th>
                                         <th> Status </th>
                                         <th> Process </th>
-                                        <th> Feedback </th>
+
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
                                         <td> {{$topic->title}} </td>
-                                        <td> {{$topic->created_at}} </td>
-                                        <td> {{$company->company_name}} </td>
+                                        <td> {{$student->last_name}} {{$student->first_name}} </td>
+                                        <td> {{$student->student_id}} </td>
                                         <td> Intern status </td>
                                         <td> Outline link to download</td>
-                                        <td>
-                                            <a class="btn btn-success" href="/contact">Feedback</a>
-                                        </td>
+
                                     </tr>
                                 </tbody>
                             </table>
@@ -100,9 +96,7 @@
                                 <div class="mt-list-container list-todo" id="accordion1" role="tablist" aria-multiselectable="true">
                                     <div class="list-todo-line"></div>
                                     <ul>
-                                        @foreach($outline as $ol) 
-                                        @php
-                                        $workByWeek = DB::table('outline_work')->where('student_id',$ol->student_id)->where('week',$ol->week)->get();
+                                        @foreach($outline as $ol) @php $workByWeek = DB::table('outline_work')->where('student_id',$ol->student_id)->where('week',$ol->week)->get();
                                         $workPerWeek = DB::table('outline_work')->where('student_id',$ol->student_id)->where('week',$ol->week)->count();
                                         @endphp
                                         <li class="mt-list-item">
@@ -128,10 +122,10 @@
                                                             </div>
                                                             @if($work->status == 'Working')
                                                             <div class="task-status">
-                                                                <a class="done" href="javascript:;">
+                                                                <a class="done" href="javascript:;" id="{{$work->id}}-done" onclick="done('{{$work->id}}')">
                                                                     <i class="fa fa-check"></i>
                                                                 </a>
-                                                                <a class="pending" href="javascript:;">
+                                                                <a class="pending" href="javascript:;" id="{{$work->id}}-fail" onclick="fail('{{$work->id}}')">
                                                                     <i class="fa fa-close"></i>
                                                                 </a>
                                                             </div>
@@ -213,23 +207,21 @@
                                 <thead>
                                     <tr class="">
                                         <th> Topic </th>
-                                        <th> Instructor Mark </th>
-                                        <th> Teacher Mark </th>
-                                        <th> Instructor ID </th>
-                                        <th> Teacher ID </th>
-                                        <th> Feedback </th>
+                                        <th> Student Name</th>
+                                        <th> Student ID </th>
+                                        <th> Status </th>
+                                        <th> Process </th>
+
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
                                         <td> {{$topic->title}} </td>
-                                        <td> {{$stdMark->mark_instructor}} </td>
-                                        <td> {{$stdMark->mark_lecturer}} </td>
-                                        <td> {{$stdMark->instructor_id}} </td>
-                                        <td> {{$stdMark->lecturer_id}}</td>
-                                        <td>
-                                            <a class="btn btn-success" href="/contact">Feedback</a>
-                                        </td>
+                                        <td> {{$student->last_name}} {{$student->first_name}} </td>
+                                        <td> {{$student->student_id}} </td>
+                                        <td> Intern status </td>
+                                        <td> Outline link to download</td>
+
                                     </tr>
                                 </tbody>
                             </table>
@@ -239,67 +231,58 @@
 
                 </div>
             </div>
-            <hr>
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="form-group">
-                        <span class="caption-subject font-green bold uppercase">Work Outline</span>
-
-                        <form action="{{ url('dropzone') }}" method="post" class="dropzone dropzone-file-area dz-clickable" id="my-dropzone" style="width: 500px;">
-                            {{csrf_field()}}
-
-                            <h3 class="sbold">Drop file or click here to upload</h3>
-                            <p> <a class="btn btn-success" onclick="submitReport()">Submit</a></p>
-                            <div class="dz-default dz-message">
-                                <span></span>
-                                
-                            </div>
-                            
-                        </form>
-
-                        {{--
-                        <input type="file" class="dropzone dropzone-file-area" id="file" name="image" style="width: 500px;"></input> --}}
-
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
-    <!-- END CONTENT BODY -->
-    @endsection @section('extra-js')
-    <script src="https://rawgit.com/enyo/dropzone/master/dist/dropzone.js"></script>
-    <script>
-        Dropzone.autoDiscover = false;
-        $(document).ready(function () {
-            $('#clickmewow').click(function () {
-                $('#radio1003').attr('checked', 'checked');
-            });
-        })
-    </script>
-    <script>
-        var myDropzone = new Dropzone("#my-dropzone", {
-            url: "/upload/report",
+</div>
+<!-- END CONTENT BODY -->
+@endsection @section('extra-js')
+
+<script>
+    function done(id) {
+        var removeFail = document.getElementById(id + '-fail')
+        $.ajaxSetup({
             headers: {
                 'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-            },
-            
-            maxFilesize: 25,
-                
+            }
         });
-        function submitReport(){
-            $.ajaxSetup({
-                headers: {
-                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-                }
-            });
-            $.ajax({
-                url: "/report/submit",
-                type: 'post',
-                data: {
-                    'report': $('.dz-filename').text(),
-                },
-            });
-        }
-        
-    </script>
-    @endsection
+        $.ajax({
+            url: "/instructor/outline/work/done",
+            type: 'post',
+
+            success: function () {
+                $(removeFail).remove();
+            }
+
+
+        });
+
+
+    }
+
+    function fail(id) {
+        var removeDone = document.getElementById(id + '-done')
+        $.ajaxSetup({
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            }
+        });
+        $.ajax({
+            url: "/instructor/outline/work/fail",
+            type: 'post',
+
+            success: function () {
+                $(removeDone).remove();
+
+            }
+
+        });
+
+    }
+
+    $(document).ready(function () {
+        $('#clickmewow').click(function () {
+            $('#radio1003').attr('checked', 'checked');
+        });
+    })
+</script>
+@endsection

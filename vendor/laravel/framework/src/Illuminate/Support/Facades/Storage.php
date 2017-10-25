@@ -24,6 +24,13 @@ class Storage extends Facade
         static::set($disk, self::createLocalDriver(['root' => $root]));
     }
 
+    public static function persistentFake($disk)
+    {
+        static::set($disk, self::createLocalDriver([
+            'root' => storage_path('framework/testing/disks/'.$disk),
+        ]));
+    }
+
     /**
      * Get the registered name of the component.
      *

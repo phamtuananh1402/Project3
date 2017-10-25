@@ -25,6 +25,28 @@ class ReportController extends Controller
         return view('home');
     }
 
+    public function uploadReport(Request $request)
+    {
+
+        $file = $request->file('file'); //access dropzone files
+        $contents = Storage::disk('public');
+        $new_name = $file->getClientOriginalName();
+        $fileName = $new_name;
+        $contents->put($fileName, file_get_contents($file->getRealPath()));
+
+    }
+    public function submitReport(Request $request)
+    {
+        if($request->ajax()){
+            DB::table('report')->where('student_id',Auth::user()->user_id)->update([
+                'link'=> 'storage/'.$request->report,
+                'filename'=> $request->report,
+                'status'=>"Submitted"
+            ]);
+        }
+
+    }
+
     public function create(Students $students)
     {
         $id = $students->retrieveStudentId();

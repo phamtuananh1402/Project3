@@ -112,15 +112,14 @@ Route::group(['middleware' => ['auth', 'student']], function () {
     Route::get('student/create/aspiration', 'AspirationController@create');
     Route::post('student/aspiration/', 'AspirationController@store');
 
-    //Student Report
-    // Route::get('/student/intern', 'ReportController@create');
-    Route::post('/student/intern', 'InternProcessController@store');
-    Route::get('/student/mark', 'StudentMarkController@index');
+    //Student Report-done
+    Route::post('/upload/report', 'ReportController@uploadReport');
+    Route::post('/report/submit','ReportController@submitReport');
 
-    //Student Intern Process
+    //Student Intern Process - done
     Route::get('/student/intern', 'InternProcessController@show');
 
-    //student feedback
+    //student feedback - done
     Route::get('contact',
         ['as' => 'contact', 'uses' => 'FeedbackController@create']);
     Route::post('contact',
@@ -184,7 +183,7 @@ Route::group(['middleware' => ['auth','instructor']], function () {
     Route::post('/instructor/outline/store','OutlineController@store');
     Route::post('/instructor/outline/work/done','OutlineController@workDone');
     Route::post('/instructor/outline/work/fail','OutlineController@workFail');
-    Route::get('/outline/manage/{student_id}','OutlineController@outlineManage');
+    Route::get('/instructor/manage/{student_id}','OutlineController@internManage');
     Route::get('/company/instructor/{instructor_id}', 'InstructorController@index');//thieu view
     //Instructor profile
     Route::get('instructor/create/profile', 'InstructorController@create');//thieu view

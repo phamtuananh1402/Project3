@@ -18,7 +18,7 @@ class InternProcessController extends Controller
     public function index()
     {
         //
-        return view('student.studentinternprocess');
+        return view('student.student_intern_process');
     }
 
     /**
@@ -107,11 +107,16 @@ class InternProcessController extends Controller
                         ->where('student_id',$id)->where('status','=','Working')->first();
         $countWorked = DB::table('outline_work')->select(DB::raw('COUNT(work) as done'))
                         ->where('student_id',$id)->where('status','=','Done')->first();
-        //$workByWeek = DB::table('outline_work')->where('student_id',$id)->whereIn('week',$allWeek)->get();
+        /** End Outline part */
+        /** Begin Marking Part */
+        
+        $stdMark = DB::table('mark')->where('student_id', $id)->first();
+        
+        /**End Marking Part */
         return view('student.student_intern_process', 
         compact('student', 'instructor', 'topic', 'company', 
                 'evaluation', 'endDateFeedback','outline',
-                'countWorking','countWorked'));
+                'countWorking','countWorked','stdMark'));
 
     }
 
